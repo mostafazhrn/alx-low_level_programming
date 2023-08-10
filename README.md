@@ -1,0 +1,1 @@
+this is the readme file of the alx low programming file we start with 0xx00 hello world
