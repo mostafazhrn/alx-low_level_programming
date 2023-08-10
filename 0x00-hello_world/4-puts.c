@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main: this simple code prints a text using 
- * puts and shall return zero if success
+ * Description: this simple code prints a text using puts
+ * Return: shall return zero if success
  */
 int main(void)
 {
