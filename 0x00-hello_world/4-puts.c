@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Description: this simple code prints a text using puts
+ * Description: main - this simple code prints a text using puts
  * Return: shall return zero if success
  */
 int main(void)
