@@ -1,0 +1,10 @@
+#include <stdio.h>
+/**
+ *main - this code run the size of various type
+ *Return: this program shall return 0 if success
+ */
+int main(void)
+{
+printf("size of char %2d bytes \n", sizeof(char));
+return (0);
+}
