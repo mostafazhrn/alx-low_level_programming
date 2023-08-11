@@ -1,0 +1,16 @@
+#include <stdio.h>
+/**
+ *Description: main - this code prints a-z except q,e
+ *Return: in success return 0
+ */
+int main(void)
+{
+char x;
+for (x = 'a'; x <= 'z'; ++x)
+{
+if (x != 'q' &&  x != 'e')
+putchar(x);
+}
+putchar('\n');
+return (0);
+}
