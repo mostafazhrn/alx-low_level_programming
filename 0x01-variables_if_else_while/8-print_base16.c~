@@ -1,0 +1,10 @@
+#include <stdio.h>
+/**
+ *Description: main - print all nums of base 16
+ *Return: it shal return 0 in success
+ */
+int main(void)
+{
+
+return (0);
+}
