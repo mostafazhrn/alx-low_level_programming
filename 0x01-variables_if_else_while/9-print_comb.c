@@ -1,0 +1,21 @@
+#include <stdio.h>
+/**
+ *Description: main - this program print all possible comb
+ * of single digit numbers
+ *Return: it shall return 0 in success
+ */
+int main(void)
+{
+int x;
+for (x = '0'; x <= '9'; ++x)
+{
+putchar(x);
+if (x != '9')
+{
+putchar (',');
+putchar (' ');
+}
+}
+putchar ('\n');
+return (0);
+}
