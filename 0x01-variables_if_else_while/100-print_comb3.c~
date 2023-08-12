@@ -1,0 +1,23 @@
+#include <stdio.h>
+/**
+ *Description: main - this code print all possible
+ * combination of two digits
+ *Return: it shall return 0 in success
+ */
+int main(void)
+{
+int x;
+int y;
+for (x = '0'; x <= '9'; ++x)
+{
+for (y = '0'; y <= '9'; ++y)
+{
+putchar (x);
+putchar (y);
+}
+putchar (',');
+putchar (' ');
+}
+putchar ('\n');
+return (0);
+}
