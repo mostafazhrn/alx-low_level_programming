@@ -1,0 +1,1 @@
+This is a readme file for the task 0x02 c func,nests and loops
