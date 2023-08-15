@@ -1,0 +1,14 @@
+#include "main.h"
+/**
+ *_abs - this codes gets the absolute value of a certain no
+ *@i: the no. we want its absolute
+ *Return: the return is the abs value of a no
+ */
+int _abs(int i)
+{
+if (i < 0)
+{
+i = i * -1;
+return (i);
+}
+}
