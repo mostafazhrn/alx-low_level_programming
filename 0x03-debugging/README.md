@@ -1,0 +1,1 @@
+this is a readme file for task on debugging and rubber duck debugging it contains 4 sub tasks
