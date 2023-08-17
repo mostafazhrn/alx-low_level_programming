@@ -1,0 +1,18 @@
+#include "main.h"
+/**
+ *print_line - this code draws a line
+ *@n: int to be drawn as str8t line
+ *Return: it shall return a line
+ */
+void print_line(int n)
+{
+int x;
+if (n > 0)
+{
+for (x = 0; x < n; x++)
+{
+_putchar('_');
+_putchar('\n');
+}
+}
+}
