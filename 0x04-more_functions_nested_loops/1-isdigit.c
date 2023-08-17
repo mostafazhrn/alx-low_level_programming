@@ -1,0 +1,15 @@
+#include "main.h"
+/**
+ *_isdigit - this program checks int is digit or not
+ *@c: the integar
+ *Return: it shall retunr 1 is integar
+ */
+int _isdigit(int c)
+{
+if (c >= '0' && c <= '9')
+{
+return (1);
+}
+else
+return (0);
+}
