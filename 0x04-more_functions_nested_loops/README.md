@@ -1,0 +1,1 @@
+this readme is for the project 0x04 more func and nested loops 
