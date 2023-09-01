@@ -1,0 +1,13 @@
+#include "main.h"
+/**
+ *_islower - this code verify if a char is upper or lower
+ *@c: char to test
+ *Return: return 1 or zero depending whetherlower or higher
+ */
+int _islower(int c)
+{
+if (c >= 'a' && c <= 'z')
+return (1);
+else
+return (0);
+}

@@ -1,0 +1,1 @@
+this is a readme file for the task 0x09 static libraries
