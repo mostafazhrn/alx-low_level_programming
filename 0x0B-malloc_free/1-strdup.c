@@ -1,0 +1,36 @@
+#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
+/**
+ **_strdup - this program shall realocate a pointer to new memo
+ *@str: this represent the str to be reallocated
+ *Return: it shall return the pntr in success or null in fail
+ */
+char *_strdup(char *str)
+{
+int x = 0;
+int y = 0;
+char *z;
+if (str == NULL)
+{
+return (NULL);
+}
+while (str[y] != '\0')
+{
+y++;
+}
+z = malloc(y *sizeof(*str) + 1);
+if (z == 0)
+{
+return (NULL);
+}
+else
+{
+while (x < y)
+{
+z[x] = str[x];
+x++;
+}
+}
+return (z);
+}
