@@ -1,0 +1,1 @@
+this is a readme file for the task 0x0c more malloc free in this task we will dive deep in the malloc and free function and exit func this task consists of 4 sub tasks as follows
