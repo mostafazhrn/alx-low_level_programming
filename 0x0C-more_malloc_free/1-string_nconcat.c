@@ -2,6 +2,20 @@
 #include <stdlib.h>
 #include "main.h"
 /**
+ *_strng - this code shall return the str len
+ *@a: this represent the str to be returned
+ *Return: it shall return the str len
+ */
+int _strng(char *a)
+{
+int b;
+for (b = 0; *a; b++)
+{
+a++;
+}
+return (b);
+}
+/**
  **string_nconcat - this program shall connect two strs
  *@s1: this represent the 1st str to be connected
  *@s2: htis represent the 2nd Str to connect
@@ -10,11 +24,11 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int x = 0;
-unsigned int y = 0;
-unsigned int z = 0;
-unsigned int w;
-char *a;
+char *z;
+unsigned int in = 0;
+unsigned int on = 0;
+unsigned int x;
+unsigned int y;
 if (s1 == NULL)
 {
 s1 = "";
@@ -23,19 +37,23 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-for (; s1[x]; x++)
-;
-for (; s2[y]; y++)
-;
-y > n ? (y = n) : (n = y);
-w = x + y + 1;
-a = malloc(w *sizeof(char));
-if (a == NULL)
+x = _strng(s1);
+y = _strng(s2);
+n = (n >= y) ? y : n;
+z = malloc((x + n) *sizeof(char) + 1);
+if (!z)
 {
 return (NULL);
 }
-for (; z < w - 1; z++)
-z < x ? (a[z] = s1[z]) : (a[z] = s2[z - x]);
-a[w] = '\0';
-return (a);
+while (in < x)
+{
+z[in] = s1[in];
+in++;
+}
+for (; on < n; on++, in++)
+{
+z[in] = s2[on];
+}
+z[in] = '\0';
+return (z);
 }
