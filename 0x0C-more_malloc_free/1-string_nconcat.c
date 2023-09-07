@@ -29,12 +29,12 @@ for (; s2[y]; y++)
 ;
 y > n ? (y = n) : (n = y);
 w = x + y + 1;
-a = malloc(w * sizeof(char));
+a = malloc(w *sizeof(char));
 if (a == NULL)
 {
 return (NULL);
 }
-for (;z < w - 1; z++)
+for (; z < w - 1; z++)
 z < x ? (a[z] = s1[z]) : (a[z] = s2[z - x]);
 a[w] = '\0';
 return (a);
