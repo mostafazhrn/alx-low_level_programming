@@ -1,0 +1,72 @@
+#include "dog.h"
+#include <stdlib.h>
+#include <stdio.h>
+/**
+ *_length - this program shall collect len of str
+ *@a: this represent the str to be collected
+ *Return: it shall return the len of str
+ */
+int _length(char *a)
+{
+int b = 0;
+for (; *a; b++)
+{
+a++;
+}
+return (b);
+}
+/**
+ *_cpstr - this program shall cp the new str
+ *@i: this represent the str
+ *Return: it shall return a str
+ */
+char *_cpstr(char *i)
+{
+char *j;
+unsigned int k = 0;
+unsigned int l;
+if (!i)
+{
+return (NULL);
+}
+l = _length(i);
+j = malloc(l *sizeof(char) + 1);
+if (!j)
+{
+return (NULL);
+}
+while (k < l)
+{
+j[k] = i[k];
+k++;
+}
+j[k] = '\0';
+return (j);
+}
+/**
+ **new_dog - this program shall create a new str dog
+ *@name: this represent the name of the dog
+ *@age: this represent the age of the dog
+ *@owner: this shall represent the owner of dog
+ *Return: it shall retrun the new dogzie
+ */
+dog_t *new_dog(char *name, float age, char *owner)
+{
+dog_t *x = malloc(sizeof(dog_t));
+if (!x)
+{
+return (NULL);
+}
+x->name = _cpstr(name);
+if (!x->name)
+{
+return (free(x), NULL);
+}
+x->owner = _cpstr(owner);
+if (!x->owner)
+{
+return (free(x->name), free(x), NULL);
+}
+x->age = age;
+return (x);
+}
