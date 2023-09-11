@@ -1,0 +1,18 @@
+#include "dog.h"
+/**
+ *init_dog - this code shall start a var of struct dog
+ *@d: this represent el doggo
+ *@name: this represent the name of the dog
+ *@age: this shall represent the age of the dog
+ *@owner: this shall represent the owner of the dog
+ *Return: it shall return zero in success
+ */
+void init_dog(struct dog *d, char *name, float age, char *owner)
+{
+if (d)
+{
+d->name = name;
+d->owner = owner;
+d->age = age;
+}
+}
