@@ -1,0 +1,1 @@
+this is a readme file for the task 0x0E-structures_typedef which consists of 6 tasks as follows 
