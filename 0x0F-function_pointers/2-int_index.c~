@@ -1,0 +1,26 @@
+#include "function_pointers.h"
+/**
+ *int_index - this program shall search for ints
+ *@array: this shall represent the ints of array
+ *@size: this shall represent the size of arr
+ *@cmp: it shall cmp the ints
+ *Return: it shall return the searched ints or -1 ints finished
+ */
+int int_index(int *array, int size, int (*cmp)(int))
+{
+int x;
+if (size > 0 )
+{
+if (array != NULL && cmp != NULL)
+{
+for (x = 0; x < size; x++)
+{
+if (cmp(array[x]))
+{
+return (x);
+}
+}
+}
+}
+return (-1);
+}

@@ -1,0 +1,39 @@
+#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ *main - this code shall calculate two ints
+ *@argc: this represent the arg of operatipon
+ *@argv: this shall represent the ptr to arg
+ *Return: this shall return zero in success
+ */
+int main(int argc, char *argv[])
+{
+int x;
+int y;
+int z;
+int (*a)(int, int);
+char *b;
+if (argc !=4)
+{
+printf("ERROR\n");
+exit(98);
+}
+x = atoi(argv[1]);
+y = atoi(argv[3]);
+b = argv[2];
+if (get_op_func(argv[2]) == NULL || argv[2][1] != '\0')
+{
+printf("ERROR\n");
+exit(99);
+}
+if ((*b == '/' || *b == '%') && (*argv[3] == '0'))
+{
+printf("ERROR\n");
+exit(100);
+}
+a = get_op_func(b);
+z = a(x, y);
+printf("%d\n", z);
+return (0);
+}

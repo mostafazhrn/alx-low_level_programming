@@ -1,0 +1,61 @@
+#include "3-calc.h"
+/**
+ *op_add - this code shall add two ints
+ *@a: this represent the first int
+ *@b: this rerpesent the second int
+ *Return: it shall return the add of both ints
+ */
+int op_add(int a, int b)
+{
+return (a + b);
+}
+/**
+ *op_sub - this code shall sub two ints
+ *@a: this represent the first int
+ *@b: this rerpesent the second int
+ *Return: it shall return the sub of both ints
+ */
+int op_sub(int a, int b)
+{
+return (a - b);
+}
+/**
+ *op_mul - this code shall mul two ints
+ *@a: this represent the first int
+ *@b: this rerpesent the second int
+ *Return: it shall return the mul of both ints
+ */
+int op_mul(int a, int b)
+{
+return (a * b);
+}
+/**
+ *op_div - this code shall divi two ints
+ *@a: this represent the first int
+ *@b: this rerpesent the second int
+ *Return: it shall return the divide of both ints
+ */
+int op_div(int a, int b)
+{
+if (b == 0)
+{
+printf("ERROR\n");
+exit(100);
+}
+return (a / b);
+}
+/**
+ *op_mod - this code shall module two ints
+ *@a: this represent the first int
+ *@b: this rerpesent the second int
+ *Return: it shall return the module of both ints
+ */
+int op_mod(int a, int b)
+{
+if (b == 0)
+{
+printf("ERROR\n");
+exit(100);
+}
+return (a % b);
+}
