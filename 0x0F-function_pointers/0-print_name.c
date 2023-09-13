@@ -1,0 +1,14 @@
+#include "function_pointers.h"
+/**
+ *print_name - this program shall prints the name
+ *@name: this shall represent the satring name
+ *@f: this shall represent tha func that prints
+ *Retrun: it shall return zero in success
+ */
+void print_name(char *name, void (*f)(char *))
+{
+if (name && f)
+{
+f(name);
+}
+}
