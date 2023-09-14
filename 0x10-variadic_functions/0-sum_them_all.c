@@ -1,0 +1,21 @@
+#include "variadic_functions.h"
+#include <stdarg.h>
+/**
+ *sum_them_all - this code shall return the sum of param
+ *@n: this shall represent the sum of ints
+ *Return: it shall return the sum of ints or zero if null
+ */
+int sum_them_all(const unsigned int n, ...)
+{
+int x = 0;
+unsigned int y = 0;
+va_list lst;
+va_start(lst, n);
+while (y < n)
+{
+x += va_arg(lst, int);
+y++;
+}
+va_end(lst);
+return (x);
+}

@@ -1,0 +1,1 @@
+this is a readme file for the task 0x10-variadic_functions this task consists of 4 sub tasks which are as follows
