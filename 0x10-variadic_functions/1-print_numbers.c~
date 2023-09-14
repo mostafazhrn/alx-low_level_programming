@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdarg.h>
+#include "variadic_functions.h"
+/**
+ *print_numbers - this code shall give nos
+ *@separator: this shall represent the sep of nos
+ *@n: this shall rpresent the nos of args
+ *Return: this code shall return zero in success
+ */
+void print_numbers(const char *separator, const unsigned int n, ...)
+{
+va_list numbers;
+	unsigned int i;
+
+	if (separator == NULL)
+	{
+		separator = "";
+	}
+
+	va_start(numbers, n);
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", va_arg(numbers, int));
+		if (n == i + 1)
+		{
+			break;
+		}
+		printf("%s", separator);
+	}
+	printf("\n");
+	va_end(numbers);
+}
