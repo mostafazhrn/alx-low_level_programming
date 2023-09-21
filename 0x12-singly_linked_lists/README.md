@@ -1,0 +1,1 @@
+this is a readme file for the task 0x12-singly_linked_lists and its subtasks whuch are as follows
