@@ -20,7 +20,7 @@ return (NULL);
 upe = strdup(str);
 if (upe == NULL)
 {
-free (nuevo);
+free(nuevo);
 return (NULL);
 }
 while (str[x])
