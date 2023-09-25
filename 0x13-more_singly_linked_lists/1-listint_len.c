@@ -1,0 +1,15 @@
+#include "lists.h"
+/**
+ *listint_len - this code shall return num of elements in LST
+ *@h: this shall represent the head
+ *Return: it shall return the num of elem
+ */
+size_t listint_len(const listint_t *h)
+{
+size_t x;
+for (x = 0; h; x++)
+{
+h = h->next;
+}
+return (x);
+}
