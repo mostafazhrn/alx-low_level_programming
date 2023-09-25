@@ -1,0 +1,33 @@
+#include <stdlib.h>
+#include "lists.h"
+/**
+ **add_nodeint_end - this code shall add new nodes to LST
+ *@head: thsi shall represent the start of LST
+ *@n: this shall represent the int of lst
+ *Return: it shall return void if fail and elemnt of lst in succ
+ */
+listint_t *add_nodeint_end(listint_t **head, const int n)
+{
+listint_t *a;
+listint_t *z;
+a = malloc(sizeof(listint_t));
+if (a == NULL)
+{
+return (NULL);
+}
+a->n = n;
+a->next = NULL;
+if (*head == NULL)
+{
+*head = a;
+}
+else
+{
+for (z = *head; z->next != NULL;)
+{
+z = z->next;
+}
+z->next = a;
+}
+return (*head);
+}
