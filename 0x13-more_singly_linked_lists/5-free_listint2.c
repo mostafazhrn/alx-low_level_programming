@@ -7,15 +7,15 @@
  */
 void free_listint2(listint_t **head)
 {
-  listint_t *cach;
-  if (head == NULL)
-    {
-      return;
-    }
-  for (; *head; *head = cach)
-    {
-      cach = (*head)->next;
-      free(*head);
-    }
-  head = NULL;
+listint_t *cach;
+if (head == NULL)
+{
+return;
+}
+for (; *head; *head = cach)
+{
+cach = (*head)->next;
+free(*head);
+}
+head = NULL;
 }
