@@ -10,15 +10,15 @@ void sort(int x, char **y, int z)
 {
 if (x == 100)
 {
-dprintf(STDERR_FILENO, "ERROR: Can't close fd %d\n", z);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", z);
 }
 else if (x == 99)
 {
-dprintf(STDERR_FILENO, "ERROR: Can't write to %s\n", y[2]);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", y[2]);
 }
 else if (x == 98)
 {
-dprintf(STDERR_FILENO, "ERROR: Can't read from file %s\n", y[1]);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", y[1]);
 }
 else if (x == 97)
 {
@@ -57,10 +57,10 @@ while ((bit = read(fz, b, 1024)) != 0)
 {
 switch (bit == -1)
 {
-case 1:
-sort(98, y, 0);
-break;
-}
+ case 1:
+ sort(98, y, 0);
+ break;
+ }
 ecr = write(tz, b, bit);
 switch (ecr == -1 || ecr != bit)
 {
@@ -75,9 +75,11 @@ case 1:
 sort(100, y, tz);
 break;
 }
-if (close(fz) == -1)
+switch (close(fz) == -1)
 {
+case 1:
 sort(100, y, fz);
+break;
 }
 return (0);
 break;
