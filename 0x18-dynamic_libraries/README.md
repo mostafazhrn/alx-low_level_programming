@@ -1,0 +1,1 @@
+this is a readme file for the task 0x18-dynamic_libraries this task about dynamic lists and have two subtasks and two advanced
