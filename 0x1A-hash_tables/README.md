@@ -1,0 +1,1 @@
+This is a readme file for the task 0x1A-hash_tables for the alx software engineering program which consists of 7 tasks mandatory and 1 advanced
