@@ -1,10 +1,10 @@
 #include "hash_tables.h"
 /**
- * hash_table_set - this code shall create hash table
- * @ht: this represent the size of the array
- * @key: this is the size of the array
- * @value: this is the value of the key
- * Return: this shall return ptr to hash table
+ * hash_table_set - this code shall add elements to table
+ * @ht: this represent the hash table
+ * @key: this represent the key
+ * @value: this represent the value
+ * Return: this shall key
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {

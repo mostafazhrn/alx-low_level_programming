@@ -1,9 +1,9 @@
 #include "hash_tables.h"
 /**
- * hash_table_get - this code shall create hash table
- * @ht: this represent the size of the array
- * @key: this is the size of the array
- * Return: this shall return ptr to hash table
+ * hash_table_get - this code get value with key
+ * @ht: this represent the hash table
+ * @key: this represent the key
+ * Return: this shall return key of table
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {

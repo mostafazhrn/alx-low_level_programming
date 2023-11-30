@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 /**
- * hash_djb2 - this code shall create hash table
- * @str: this represent the size of the array
- * Return: this shall return ptr to hash table
+ * hash_djb2 - this code shall create djb algo
+ * @str: this represent the ptr
+ * Return: this shall return hash
  */
 unsigned long int hash_djb2(const unsigned char *str)
 {
