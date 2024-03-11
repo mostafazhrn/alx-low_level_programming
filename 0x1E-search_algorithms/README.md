@@ -1,0 +1,1 @@
+THis is a readme file for the task 0x1E-search_algorithms for the alx software engineering program which consists of 7 mandatory tasks and 9 advanced 
