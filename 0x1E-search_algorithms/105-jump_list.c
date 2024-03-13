@@ -1,7 +1,7 @@
 #include "search_algos.h"
 #include <math.h>
 /**
- * jump_list - THis code shall search arry of ints using jump algo
+ * jump_list - THis code shall search arry in sorted lst using jump algo
  * in singly linked lst
  * @list: This shall represent the ptr to 1st elem of array
  * @size: THis shall rep the num of elems in array
